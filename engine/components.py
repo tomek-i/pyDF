@@ -5,6 +5,7 @@ They might have initialization code, but no processing logic whatsoever.
 """
 
 class Renderable:
+	""" Data required for a render/drawing processor to be able to render this component """
     def __init__(self, image, pos_x, pos_y, depth=0):
         self.image = image
         self.depth = depth

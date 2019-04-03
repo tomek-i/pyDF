@@ -29,7 +29,7 @@ class ColorMap:
         color_image = noise_image.convert('RGB')  # TODO: should check if it is already RGB or not
         data = np.array(color_image)
 
-        # we need a structure for colors, maybe its own class?
+        # some default color ranges if none supplied
         if not color_ranges:
             color_ranges = [
                 ColorMapping((14, 41, 163), -1, 50),  # deep water
